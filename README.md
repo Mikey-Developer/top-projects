@@ -1,2 +1,2 @@
-# top-projects
-Projects from The Odin Project
+# TOP Projects
+Repository to showcase finished / WIP projects from The Odin Project curriculum. 
