@@ -9,6 +9,10 @@ body{
     /* #121212 */
 }
 
+body > *, input{
+    font-family: arial, sans-serif;
+}
+
 header ul{
     list-style: none;
     float: right;
@@ -17,9 +21,19 @@ header ul{
 
 header ul li{
     display: inline;
-    margin-right: 1em;
+    margin-right: 1.1em;
+    font-size: small;
 }
 
-header ul li:last-child{
-    margin-right: 2em;
+header ul li:nth-child(even){
+    margin-right: 3em;
+}
+
+header ul li > a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.search-container .search-buttons input{
+    appearance: none;
 }
