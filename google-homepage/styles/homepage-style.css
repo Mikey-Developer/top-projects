@@ -29,11 +29,44 @@ header ul li:nth-child(even){
     margin-right: 3em;
 }
 
-a{
+header ul li a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.87);
 }
 
 .search-container .search-buttons input{
     appearance: none;
+}
+
+footer{
+    background-color: rgb(242, 242, 242);
+}
+
+footer #country, footer .wrapper{
+    padding: 1em 0;
+    margin: 0;
+}
+
+footer #country{
+    border-bottom: 1px solid #dadce0;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+}
+
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer .wrapper div a{
+    padding: 0 0.9em;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer #country, footer .wrapper div a{
+    color: rgb(112, 117, 122);
 }
