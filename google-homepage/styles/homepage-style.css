@@ -67,13 +67,21 @@ header ul li a{
 .search-buttons{
     display: flex;
     justify-content: center;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 .search-buttons input{
     margin: 0.9em 4px;
     padding: 0 1em;
     height: 36px;
+    min-width: 54px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f8f8;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #3c4043;
+    font-size: 14px;
+    line-height: 27px;
 }
 
 footer{
