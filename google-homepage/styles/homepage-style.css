@@ -17,6 +17,8 @@ header ul{
     list-style: none;
     float: right;
     border: 2px solid black;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 header ul li{
@@ -34,8 +36,44 @@ header ul li a{
     color: rgba(0, 0, 0, 0.87);
 }
 
-.search-container .search-buttons input{
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    border: 2px solid red;
+    width: 100%;
+}
+
+.content img{
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.search-container input{
     appearance: none;
+}
+
+.search-bar{
+    margin-top: 1.5em;
+    width: 100%;
+    max-width: 580px;
+    border: 2px solid black;
+}
+
+.search-buttons{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.search-buttons input{
+    margin: 0.9em 4px;
+    padding: 0 1em;
+    height: 36px;
 }
 
 footer{
