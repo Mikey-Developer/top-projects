@@ -16,6 +16,8 @@ body > *, input{
 header ul{
     list-style: none;
     float: right;
+    display: flex;
+    align-items: center;
     border: 2px solid black;
     padding: 0;
     margin-bottom: 0;
@@ -23,7 +25,7 @@ header ul{
 
 header ul li{
     display: inline;
-    margin-right: 1.1em;
+    margin-right: 1.3em;
     font-size: small;
 }
 
@@ -34,6 +36,10 @@ header ul li:nth-child(even){
 header ul li a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.87);
+}
+
+header ul li a:hover{
+    text-decoration: underline;
 }
 
 .content{
@@ -58,10 +64,40 @@ header ul li a{
 }
 
 .search-bar{
+    display: flex;
+    align-items: center;
     margin-top: 1.5em;
-    width: 100%;
-    max-width: 580px;
-    border: 2px solid black;
+    width: auto;
+    max-width: 584px;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    padding: 0.1em 0.5em;
+}
+
+.search-bar:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgb(223,225,229);
+}
+
+.search-bar span{
+    margin-left: 0.25em;
+    margin-right: 0.4em;
+    font-size: 21px;
+}
+
+.search-bar input{
+    height: inherit;
+    border: 0;
+    width: auto;
+    max-width: 540px;
+    background-color: transparent;
+    word-wrap: break-word;
+    outline: none;
+    font-size : 16px;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .search-buttons{
@@ -82,6 +118,12 @@ header ul li a{
     color: #3c4043;
     font-size: 14px;
     line-height: 27px;
+}
+
+.search-buttons input:hover{
+    border: 1px solid #dadce0;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #202124;
 }
 
 footer{
@@ -111,6 +153,10 @@ footer .wrapper div a{
     padding: 0 0.9em;
     font-size: 14px;
     text-decoration: none;
+}
+
+footer .wrapper div a:hover{
+    text-decoration: underline;
 }
 
 footer #country, footer .wrapper div a{
