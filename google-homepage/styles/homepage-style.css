@@ -6,11 +6,16 @@ html, body{
 
 body{
     background-color: #fff;
-    /* #121212 */
+    display: flex;
+    flex-direction: column;
 }
 
 body > *, input{
     font-family: arial, sans-serif;
+}
+
+header, footer{
+    flex-shrink: 0;
 }
 
 header ul{
@@ -24,7 +29,7 @@ header ul{
 
 header ul li{
     display: inline;
-    margin-right: 1.3em;
+    margin-right: 1.2em;
     font-size: small;
 }
 
@@ -60,9 +65,9 @@ header ul li a:hover{
 }
 
 .content{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     box-sizing: border-box;
     align-items: center;
     width: 100%;
